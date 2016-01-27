@@ -17,6 +17,7 @@ DATE_TO_SEARCH=''
 
 usage() {
     echo "Usage: $0 -i [instance] [ -d [date] ]"
+    echo "e.g.: $0 -i my-db 2016-01-16"
     echo "Date must be in YYYY-MM-DD format, eg 2016-01-16 for Jan 16, 2016"
     echo "Date isn't required;  default is yesterday's logs"
     exit
