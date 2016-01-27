@@ -78,7 +78,7 @@ done
 if [ ! -s ${LOG_FILE} ]
 then
     echo "Something went wrong; ${LOG_FILE} is empty!"
-    exit
+    exit 1
 fi
 
 echo "badgering logs"
