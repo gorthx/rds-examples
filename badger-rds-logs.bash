@@ -71,6 +71,7 @@ for log in `aws rds describe-db-log-files \
 do
     aws rds download-db-log-file-portion \
 --db-instance-identifier ${RDS_INSTANCE} \
+--output text \
 --log-file-name ${log} >> ${LOG_FILE}
 echo "done with ${log}"
 done
